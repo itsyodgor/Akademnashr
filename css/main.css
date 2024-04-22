@@ -1,1 +1,38 @@
 @import url(./fonts.css);
+
+/* CUSTOM PROPS */
+
+:root {
+    --primary-orange: #FF7500;
+    --white: #fff;
+    --dark: #252420;
+    --roboto: 'Roboto';
+    --robotocondenced: 'RobotoCondenced';
+}
+
+/* Global Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    width: 1130px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: auto;
+}
+
+body {
+    font-family: var(--roboto);
+}
