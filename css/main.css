@@ -142,8 +142,7 @@ body {
 .site-hero {
     background-color: var(--dark);
 }
-.site-hero__desc {
-}
+
 .site-hero__title {
     max-width: 339px;
     width: 100%;
@@ -153,7 +152,19 @@ body {
     font-weight: 700;
     line-height: 48px;
     letter-spacing: .5px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
 }
+
+.site-hero__title::before {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 3px;
+    background-color: var(--primary-orange);
+}
+
 .site-hero__text {
     max-width: 387px;
     width: 100%;
@@ -170,5 +181,87 @@ body {
     height: 510px;
     border-radius: 8px;
     transform: translateY(40px);
-    box-shadow: 24px 24px 0px 0px rgba(255, 117, 0, 0.60) ;
+    box-shadow: 24px 24px 0px 0px rgba(255, 117, 0, 0.60);
+}
+
+/* SITE HERO */
+
+/* ABOUT SECTION */
+
+.about {
+    padding-top: 269px;
+    padding-bottom: 151px;
+}
+
+.about-title {
+    max-width: 435px;
+    width: 100%;
+    color: #000;
+    font-family: var(--robotocondenced);
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 120%;
+    /* 86.4px */
+    letter-spacing: 0.5px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+    margin-bottom: 72px;
+}
+
+.about-title::before {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 3px;
+    background-color: var(--primary-orange);
+}
+
+.about-cards {
+    display: flex;
+    column-gap: 40px;
+}
+
+.about-card {
+    display: flex;
+    width: 340px;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.about-card-icon {
+    width: 100px;
+    height: 100px;
+    background-color: rgba(255, 117, 0, 0.20);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-card__img {
+    object-fit: cover;
+}
+
+.about-card__title {
+    margin-top: 32px;
+    margin-bottom: 12px;
+    color: #000;
+    font-family: var(--robotocondenced);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 120%;
+    /* 24px */
+    letter-spacing: 0.5px;
+}
+
+.about-card__text {
+    max-width: 314px;
+    width: 100%;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    /* 24px */
+    letter-spacing: 0.5px;
 }
