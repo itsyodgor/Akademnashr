@@ -23,3 +23,76 @@ ul {
     padding-right: 15px;
     margin: auto;
 }
+.site-header {
+    width: 100%;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+.site-header__line {
+    width: 100%;
+    height: 5px;
+    background-color: #FF7500;
+}
+.d-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.site-header__logo {
+}
+.logo {
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+}
+.logo-image {
+    width: 38px;
+    height: 59.184px;
+}
+.logo-name {
+    color: #252420;
+    font-family: RobotoCondensed;
+    font-size: 32px;
+    font-weight: 700;
+}
+.logo-name::after{
+    content: "nashr";
+    color: #FF7500;
+    font-family: RobotoCondensed;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.site-header__list {
+}
+.nav {
+    display: flex;
+    column-gap: 32px;
+}
+.nav-item {
+}
+.nav-link {
+    color: #000;
+    font-family: Roboto;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: .5s;
+}
+.nav-link:hover {
+    color: #FF7500;
+}
+.nav-link::after{
+    content: "";
+    display: block;
+    width: 0;
+    height: 3px;
+    background-color: #FF7500;
+    transition: .5s;
+}
+.nav-link:hover::after{
+    width: 100%;
+}
+.all-btn {
+}
